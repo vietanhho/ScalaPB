@@ -61,6 +61,8 @@ message MessageOptions {
 
   // Additional classes and traits to mix in to the companion object.
   repeated string companion_extends = 2;
+
+  repeated string annotations = 3;
 }
 
 extend google.protobuf.MessageOptions {

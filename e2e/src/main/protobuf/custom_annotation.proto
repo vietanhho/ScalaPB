@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package com.trueaccord.proto.e2e;
+
+import "scalapb/scalapb.proto";
+
+message CustomAnnotationMessage {
+  option (scalapb.message).annotations = "@Deprecated";
+}
+
+// These get collection.immutable.Seq from the file-level definition.
